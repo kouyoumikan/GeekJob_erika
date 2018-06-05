@@ -17,8 +17,8 @@ public class NewClass3 {
         // 2017年8月12日 18時10分33秒
         c.set(1988, 5, 21, 1, 23, 45);
 
-        // 年取得
-        System.out.print(c.get(Calendar.YEAR));
+        // タイムスタンプ表示
+        System.out.print(c.getTime());
     }
 
 }
