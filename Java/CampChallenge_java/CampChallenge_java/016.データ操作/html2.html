@@ -6,18 +6,31 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>データ操作5</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div> 入力フィールドの作成と実装 </div> <br>
         
-         <input type="text" name="名前情報">
-     
-      <input type="radio" name="性別情報">
-      
-      <textarea name="趣味情報"></textarea>
+        <form action="/WebApplication1/profile"  >
+        <!--HTML ファイルを作成してください。また，この HTML ファイルに，以下の情報を入力するフォームを作成してください。 
+
+        名前情報（テキストボックスで作成） 
+        性別情報（ラジオボタンで作成） 
+        趣味情報（テキストエリアで作成）-->
+        
+      名前 <input type="text" name="txtName" value="名前情報"> <br>
+      <br>
+      <input type="radio" name="rdoSample" value="男性">男性<br>
+      <input type="radio" name="rdoSample" value="女性">女性<br>
+      <input type="radio" name="rdoSample" value="その他">その他<br>
+      <br>
+      趣味 <textarea name="mulText" ></textarea> <br>
+      <br>
+      <input type="submit" name="btnSubmit" value="送信">
+     </form>
+         
         
     </body>
 </html>
