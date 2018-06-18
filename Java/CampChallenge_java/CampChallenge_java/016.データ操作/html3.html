@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>データ操作２</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        http://localhost:8080/_WebApplication1_project_/_html3_file_.jsp?total=1500&count=10&type=2  -->
+    </head>
+    <body>
+        <div>クエストリング</div>
+        
+        <form action="/WebApplication1/test" method="get" >
+        <br>
+        
+      購入した商品の総額<input type="text" name="total" size="10" value="1500"> 
+      <br>
+      数量<input type="number" name="count" value="10" min="1" max="100" size="5"> 
+      <br>  
+      
+      <select name="type">
+      <option name="type" value="1">雑貨</option>
+      
+      <option name="type" value="2">生鮮食品</option>
+      
+      <option name="type" value="3">その他</option>
+      </select>
+      <br>
+      <input type="submit" name="btnSubmit" value="送信">
+      
+     </form>
+    </body>
+</html>
