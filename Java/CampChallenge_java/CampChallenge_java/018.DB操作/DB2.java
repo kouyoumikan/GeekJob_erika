@@ -51,22 +51,28 @@ public class DB2 extends HttpServlet {
       db_con = DriverManager.getConnection(url, "kouyou", "kouyou136");
       
       // SQLの送信
-      db_st = db_con.prepareStatement("SELECT * FROM profiles");
-      db_st.setInt(1, 33);
+      db_st = db_con.prepareStatement("INSERT INTO profiles values(?, ?, ?, ?, ?)");
+      db_st.setInt(1, 10);
+      db_st.setString(2, "田中 実");
+      db_st.setString(3, "012-345-6789");
+      db_st.setInt(4, 30);
+      db_st.setString(5, "1994-02-01");
       
-     // db_data = db_st.executeQuery();
-      
-      String sql = "INSERE INTO profiles VABLE (1, '田中 実', '012-345-6789', 30, '1994-02-01')";
+      db_st.executeUpdate();
+
+      String sql = "SELECT * FROM profiles";
       
   // SQLの実行 SELECT文にはexecuteQuery(sql)
-  ResultSet rs = db_st.executeQuery(sql);
+     db_data = db_st.executeQuery(sql);
       
       //　結果の表示
-  while(db_data.next()){
-       
-      out.print("名前：" + db_data.getString("name") + "<br>");
-      
-   }  
+      while(db_data.next()){
+        out.print("プロフィールID：" + db_data.getInt("profilesID") + "<br>");
+        out.print("名前：" + db_data.getString("name") + "<br>");
+        out.print("電話番号：" + db_data.getInt("tel") + "<br>");
+        out.print("年齢：" + db_data.getInt("age") + "<br>");
+        out.print("生年月日：" + db_data.getDate("birthday") + "<br>");
+     }
     //　インスタンスの正常クローズ
   db_data.close();
   db_st.close();
@@ -74,11 +80,20 @@ public class DB2 extends HttpServlet {
   
 //　エラーハンドリング
 } catch(SQLException e_sql){
-        System.out.print("接続時にエラーが発生しました:" + e_sql.toString());
+        out.print("接続時にエラーが発生しました:" + e_sql.toString());
   }catch(Exception e){
-        System.out.print("接続時にエラーが発生しました:" + e.toString());
+        out.print("接続時にエラーが発生しました:" + e.toString());
   }
-            
+   
+     // 例外時のDB接続のクローズ
+     if (db_con != null){
+  try {
+    db_con.close();
+  } catch (Exception e_con) {
+      out.println(e_con.getMessage());
+  }
+}
+     
         }
     }
 
