@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Progate School</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" type="text/css" href="sample3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+    </head>
+    <body>
+        <style>
+            body {
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #0dc0c0;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-title {
+  color: #555;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.section-title h3 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.gray-section {
+  background: #f4f4f4;
+  color: #888;
+}
+        </style>
+        <header>
+            <style>
+                header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  line-height: 50px;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header-title {
+  float: left;
+}
+
+.header-logo {
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.header-menu-right {
+  float: right;
+}
+
+.header-menu-right li {
+  float: left;
+}
+
+.header-menu-right a {
+  color: #323A45;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.header-menu-right a:hover {
+  color: #0dc0c0;
+  transition: color .3s;
+}
+            </style>
+      <div class="container">
+        <div class="header-title">
+          <a class="header-logo" href="#home">Progate School</a>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-right">
+            <li>
+              <a href="#languages">学習言語</a>
+            </li>
+            <li>
+              <a href="#features">特徴</a>
+            </li>
+            <li>
+              <a href="#pricing">料金</a>
+            </li>
+            <li>
+              <a href="#columns">コラム</a>
+            </li>
+            <li>
+              <a href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top content -->
+    <div id="home" class="top-section">
+        <style>
+            .top-section {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/backgrounds/top.jpg");
+  background-size: cover;
+}
+
+.inner-bg {
+  padding: 0;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top-description {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.top-section h2 {
+  font-family: 'Dosis', sans-serif;
+  color: #f3f3f3;
+  font-size: 48px;
+  line-height: 54px;
+  margin: 10px 0 30px 0;
+  font-weight: 400;
+}
+
+.top-description p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.top-section .top-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  font-weight: 600;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn-top-white {
+  background: rgba(250, 250, 250, 0.06);
+  border: 1px solid rgba(250, 250, 250, 0.15);
+  color: rgba(250, 250, 250, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-top-white:hover {
+  background: rgba(250, 250, 250, 0.05);
+  border: 1px solid rgba(250, 250, 250, 0.8);
+  color: #fff;
+  box-shadow: 0 0px 12px rgba(250, 250, 250, 0.15);
+}
+
+#more-text {
+  display: none;
+}
+        </style>
+      <div class="inner-bg">
+        <div class="container">
+          <div class="top-description">
+            <h2>プログラミングは人生を変える</h2>
+            <p>プログラミングを学んで、自分の人生のキャリアを開こう。</p>
+          </div>
+          <div class="top-detail">
+            <a class="btn btn-top-white btn-lg" id="read-more">もっと詳しく</a>
+            <div id="more-text">
+              プログラミングは世界を変える力です。 そしてあなたの人生を変える力です。この信念は、私たち自身がプログラミングで人生を変えてきた原体験に基づいています。 この原体験をもとに、Progateは 「初心者から、創れる人を生み出す」 ことを理念としています。 プログラミングの最初のハードルを徹底的に低くし、世界一わかりやすく、楽しい学習環境を作ります。プログラミングを学びたい人の、せっかくの一歩を挫折で終わらせないために、私たちは全力で皆様に寄り添い、日本のプログラミング教育を変えていきます。 私たちと一緒にプログラミングを学んでみませんか？
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div id="languages" class="languages-section">
+        <style>
+            .languages-section {
+  padding-bottom: 60px;
+  color: #888;
+  text-align: center;
+}
+
+.languages-box-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.languages-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 38%;
+  padding: 20px;
+}
+
+.languages-content {
+  height: 80px;
+}
+
+        </style>
+      <div class="container">
+        <div class="section-title">
+          <h3>学習する言語</h3>
+        </div>
+        <div class="languages-box-wrapper">
+          <div class="languages-box languages-box1">
+            <div class="icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/lang_icons/html.png">
+            </div>
+            <div class="languages-content">
+              <h4>HTML & CSS</h4>
+              <p>Webページの見た目をつくる言語</p>
+            </div>
+          </div>
+          <div class="languages-box languages-box2">
+            <div class="icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/lang_icons/js.png">
+            </div>
+            <div class="languages-content">
+              <h4>Javascript</h4>
+              <p>動的なウェブサイト構築に用いるプログラミング言語</p>
+            </div>
+          </div>
+          <div class="languages-box languages-box3">
+            <div class="icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/lang_icons/jquery.png">
+            </div>
+            <div class="languages-content">
+              <h4>jQuery</h4>
+              <p>効果やアニメーションを実装できるJavascriptライブラリ</p>
+            </div>
+          </div>
+          <div class="languages-box languages-box4">
+            <div class="icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/lang_icons/git.png">
+            </div>
+            <div class="languages-content">
+              <h4>Git</h4>
+              <p>ソースコードのバージョン管理、共同開発を可能にするツール</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div id="features" class="features-section">
+        <style>
+            .features-section-top {
+  text-align: center;
+  height: 376px;
+}
+
+.features-section-bottom {
+  padding-top: 120px;
+}
+
+.features-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 44%;
+  margin-left: 65px;
+  margin-bottom: 60px;
+}
+        </style>
+      <div class="features-section-top gray-section">
+        <div class="container">
+          <div class="section-title">
+            <h3>特徴</h3>
+          </div>
+          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/mac_code.png">
+        </div>
+      </div>
+      <div class="features-section-bottom">
+        <div class="container">
+          <div class="features-box">
+            <h5>① ProgateでWEB開発の基礎知識を身につけよう</h5>
+            Progateで各コースをクリアして基礎知識を身につけましょう。それぞれ２周することによって知識を定着させます。
+          </div>
+          <div class="features-box">
+            <h5>② Progateの道場で知識を習得しよう</h5>
+            Progateのコースで基礎知識を身につけたら、実践的な演習をこなしていきましょう。また道場では更に発展的な学習もしていきます。
+          </div>
+          <div class="features-box">
+            <h5>③ 実際にプロダクトを作ってみよう</h5>
+            Progateで実践的な力を身につけたら自分で１つのプロダクトを作ってみましょう。自分で１から作ってみると、意外に理解できていないことに気づくと思います。
+            バグを修正しながらプロダクトを完成させることで、エンジニアとしての力を磨きましょう。
+          </div>
+          <div class="features-box">
+            <h5>④ エンジニアインターンを体験しよう</h5>
+            実際に培ったスキルをインターンを通じて仕事として使ってみましょう。会社のエンジニアとともに仕事をしていくことによって、さらなるスキルアップを目指せるはずです。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div id="pricing" class="pricing-section gray-section">
+        <style>
+            .pricing-section {
+  padding-bottom: 50px;
+}
+
+.price-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  padding: 25px 15px 15px 15px;
+  margin: 0 1%;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+.price-column h2 {
+  color: #fff;
+  font-size: 32px;
+  background: #323A45;
+  margin-bottom: 0;
+  padding: 30px 0;
+}
+
+.price-column-green h2 {
+  background: #0DC0C0;
+}
+
+.price-column h3 {
+  color: #555;
+  background: #f0f0f0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 40px 0;
+  font-size: 30px;
+}
+
+.price-column ul {
+  padding: 30px;
+}
+
+.price-column li {
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #888;
+  font-weight: 400;
+  padding: 18px 0;
+}
+
+.btn-pricing {
+  background: #2d323a;
+  border: 1px solid #24282e;
+  color: #c9d1d6;
+}
+
+.btn-pricing:hover {
+  background: #384147;
+  border: 1px solid #32383f;
+  color: #e8edef;
+}
+        </style>
+      <div class="container">
+        <div class="section-title">
+          <h3>コースを選ぶ</h3>
+        </div>
+        <div class="price-column">
+          <h2>短期集中2週間コース</h2>
+          <h3>3万円</h3>
+          <ul>
+            <li>期間 : 2週間</li>
+            <li>チャットでの質問 : ◯ </li>
+            <li>オフィスでの質問 : ◯ </li>
+            <li>
+              <div id="short" class="btn btn-pricing">申し込む</div>
+            </li>
+          </ul>
+        </div>
+        <div class="price-column price-column-green">
+          <h2>通常1ヶ月コース</h2>
+          <h3>5万円</h3>
+          <ul>
+            <li>期間 : 1ヶ月</li>
+            <li>チャットでの質問 : ◯ </li>
+            <li>オフィスでの質問 : ◯ </li>
+            <li>
+              <div id="middle" class="btn btn-pricing">申し込む</div>
+            </li>
+          </ul>
+        </div>
+        <div class="price-column">
+          <h2>土日開発2ヶ月コース</h2>
+          <h3>8万円</h3>
+          <ul>
+            <li>期間 : 2ヶ月</li>
+            <li>チャットでの質問 : ◯ </li>
+            <li>オフィスでの質問 : ◯ </li>
+            <li>
+              <div id="long" class="btn btn-pricing">申し込む</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="apply-modal-wrapper" id="apply-modal">
+        <style>
+            .apply-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  margin: auto;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 550px;
+  height: 500px;
+  text-align: center;
+  display: block;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#apply-form {
+  width: 100%;
+}
+
+#apply-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#apply-form input, #apply-form textarea, select {
+  width: 400px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  padding: 10px 10px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+  display: inline;
+}
+
+#apply-form textarea {
+  max-height: 100px;
+}
+
+select {
+  height: 40px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 400px;
+}
+        </style>
+      <div class="modal">
+        <div id="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="apply-form">
+          <h2>各種コースお申し込み</h2>
+          <form>
+            <select id="course-select" name="course">
+              <option value="short">短期集中2週間コース</option>
+              <option value="middle" selected>通常1ヶ月コース</option>
+              <option value="long">土日開発2ヶ月コース</option>
+            </select>
+            <input class="form-control" type="text" placeholder="氏名">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <textarea name="message" placeholder="志望理由"></textarea>
+            <div class="apply-show" id="submit-btn">確認画面へ</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Students -->
+    <div id="students" class="students-section">
+        <style>
+            #student-carousel {
+  padding-bottom: 10px;
+}
+
+.students-section {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#students .container {
+  width: 936px;
+}
+
+.student-box {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.student-image {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  padding: 0px;
+  border-radius: 50%;
+}
+
+#student-carousel img {
+  display: inline-block;
+}
+
+#student-carousel li {
+  background-color: #869791;
+}
+        </style>
+      <div class="container">
+        <div class="section-title">
+          <h3>生徒の声</h3>
+        </div>
+        <div id="student-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="" data-slide-to="0" class="active"></li>
+            <li data-target="" data-slide-to="1"></li>
+            <li data-target="" data-slide-to="2"></li>
+          </ol>
+          <div class="">
+            <div class="student-box">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/students/student_1.jpg" class="student-image">
+              <p>「プログラミング」の存在に気付いてからは、毎日がもっと楽しくなりました</p>
+              <p>-にんじゃわんこ</p>
+            </div>
+            <div class="student-box">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/students/student_2.jpg" class="student-image">
+              <p>Progateスクールは、実践的な技術に加えて、エンジニアとしての心を学べる場所です</p>
+              <p>-ひつじ仙人</p>
+            </div>
+            <div class="student-box">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/students/student_3.jpg" class="student-image">
+              <p>付け焼き刃ではない、「創る力」を身につけることができたと思っています</p>
+              <p>-ベイビーわんこ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="message-section">
+        <style>
+            .message-section {
+  color: white;
+  background: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/backgrounds/night_view.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.message-section-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 140px 0;
+}
+
+.message-section h4 {
+  color: white;
+  font-size: 22px;
+  line-height: 40px;
+}
+        </style>
+      <div class="message-section-inner">
+        <div class="container">
+          <h4>プログラミングを学ぶのなら、生涯仕事に困らないことを私が保証しよう。
+            <br>- Facebook元役員
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- Column -->
+    <div id="columns" class="columns-section gray-section">
+        <style>
+            .columns-section {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.filters-wrapper {
+  margin-bottom: 40px;
+}
+
+.filter-item {
+  background-color: #FFFFFF;
+  color: #323A45;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  margin: 10px 5px 0 0;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: all .3s;
+}
+
+.filter-item:hover {
+  color: #fff;
+  background: #009ca8;
+}
+
+.filter-item.active {
+  background: #009ca8;
+  color: #fff;
+  cursor: default;
+}
+
+.column-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  margin: 0 15px 30px;
+  padding: 7px 7px 27px;
+}
+
+.column-box img {
+  width: 100%;
+}
+
+.column-image {
+  width: 100%;
+  height: 260px;
+  background-position: center;
+  background-size: 100% auto;
+  transition: all .3s;
+}
+
+.column-title {
+  display: block;
+  margin-top: 17px;
+  color: #444;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn-loading {
+  background: #2d323a;
+  border: 1px solid #24282e;
+  color: #c9d1d6;
+}
+
+.btn-loading:hover {
+  background: #384147;
+  border: 1px solid #32383f;
+  color: #e8edef;
+}
+        </style>
+      <div class="container">
+        <div class="section-title">
+          <h3>コラム</h3>
+        </div>
+        <div class="filters-wrapper">
+          <div id="all" class="filter-item active">show all </div>
+          <div id="blog" class="filter-item">ブログ</div>
+          <div id="tip" class="filter-item">プログラミングTips</div>
+        </div>
+
+        <div class="column-box-wrapper">
+          <div class="column-box blog">
+            <a href="#" class="caption">
+              <div class="column-image" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/portfolio/programmer.jpg)">
+                <div class="zoom-black"></div>
+              </div>
+            </a>
+            <a href="#" class="column-title">プログラミングで広がる可能性</a>
+            <div>コラム</div>
+          </div>
+          <div class="column-box tip">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/portfolio/html5.jpg)">
+                <div class="zoom-black"></div>
+              </div>
+            </a>
+            <a href="#" class="column-title">HTML5の新タグについて</a>
+            <div>HTML</div>
+          </div>
+          <div class="column-box tip">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/portfolio/js.jpg)">
+                <div class="zoom-black"></div>
+              </div>
+            </a>
+            <a href="#" class="column-title">Javascriptの文法まとめ</a>
+            <div>Javascript</div>
+          </div>
+          <div class="column-box blog">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/portfolio/books.jpg)">
+                <div class="zoom-black"></div>
+              </div>
+            </a>
+            <a href="#" class="column-title">プログラミングに挫折しそうになったら読むべき10冊</a>
+            <div>コラム</div>
+          </div>
+          <div class="column-box blog">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/portfolio/engineer.jpg)">
+                <div class="zoom-black"></div>
+              </div>
+            </a>
+            <a href="#" class="column-title">これから求められるエンジニア人材とは</a>
+            <div>コラム</div>
+          </div>
+          <div class="column-box tip">
+            <a href="#">
+              <div class="column-image" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/portfolio/inspect.jpg)">
+                <div class="zoom-black"></div>
+              </div>
+            </a>
+            <a href="#" class="column-title">要素の検証をしてみよう</a>
+            <div>HTML / CSS</div>
+          </div>
+        </div>
+        <div class="btn btn-loading">Load More</div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact" class="contact-section">
+        <style>
+            .contact-section {
+  background: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/practice/backgrounds/contact.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.contact-section-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 70px;
+}
+
+.contact-section h3, .contact-section h4 {
+  color: white;
+}
+
+.contact-section h4 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.contact-form input[type="text"], .contact-form textarea {
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    background: rgba(250, 250, 250, 0.08);
+    border: none;
+    width: 85%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all .3s;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.contact-form {
+  display: inline-block;
+  vertical-align: top;
+  width: 58%;
+}
+
+.btn-contact {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background: #0dc0c0;
+  border: 1px solid #09b1b9;
+  color: white;
+  box-shadow: inset 0 1px 0 #0fc8c8;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+  margin: 10px 0;
+  padding: 15px 35px;
+}
+
+.contact-about {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.contact-about i {
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+.contact-about p {
+  margin: 0 0 24px;
+  line-height: 24px;
+}
+
+.error-message {
+  color: #F51414;
+  height: 20px;
+}
+        </style>
+      <div class="contact-section-inner">
+        <div class="container">
+          <div class="section-title">
+            <h3>お問い合わせ</h3>
+          </div>
+          <div class="contact-form">
+            <h4>メッセージを送る</h4>
+            <form>
+              <div class="error-message"></div>
+              <input type="text" name="email" placeholder="Email" class="contact-email">
+              <div class="error-message"></div>
+              <input type="text" name="subject" placeholder="Subject" class="contact-subject">
+              <div class="error-message"></div>
+              <textarea name="message" placeholder="Message"></textarea>
+              <button type="submit" class="btn btn-contact">Submit</button>
+            </form>
+          </div>
+          <div class="contact-about">
+            <h4>About Us</h4>
+            <p>プログラミングは世界を変える力です。
+                そしてあなたの人生を変える力です。
+                この信念は、私たち自身がプログラミングで人生を変えてきた原体験に基づいています。
+                この原体験をもとに、Progateは 「初心者から、創れる人を生み出す」 ことを理念としています。
+                プログラミングの最初のハードルを徹底的に低くし、世界一わかりやすく、楽しい学習環境を作ります。プログラミングを学びたい人の、せっかくの一歩を挫折で終わらせないために、私たちは全力で皆様に寄り添い、日本のプログラミング教育を変えていきます。
+                私たちと一緒にプログラミングを学んでみませんか？
+            </p>
+            <h4>Address</h4>
+            <p>
+              <i class="fa fa-map-marker"></i>東京都渋谷区神泉町20-24 Bricks 7F
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>Phone: 03-6455-0950
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Social -->
+    <div class="social-section">
+        <style>
+            .social-section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.social-section h3 {
+  font-weight: 300;
+}
+
+.social-icon {
+  text-align: center;
+  font-size: 36px;
+  line-height: 76px;
+  color: #323A45;
+  padding: 5px;
+  transition: all .3s;
+}
+        </style>
+      <div class="container">
+        <div class="section-title">
+          <h3>Follow Us!</h3>
+        </div>
+        <div class="follow-us">
+          <a href="https://www.facebook.com/Progate-742679992421539" class="social-icon" target='_blank'>
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/prog_8" class="social-icon" target='_blank'>
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <style>
+            footer {
+  text-align: center;
+  padding: 39px 0 36px;
+  background: #222;
+  color: #999;
+}
+        </style>
+      <div class="container">
+        <div class="copyright">©2015-
+          Progate
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  
+    </body>
+</html>
