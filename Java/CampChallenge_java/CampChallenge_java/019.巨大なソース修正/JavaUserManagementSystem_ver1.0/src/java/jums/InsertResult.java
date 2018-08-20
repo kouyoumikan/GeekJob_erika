@@ -33,17 +33,34 @@ public class InsertResult extends HttpServlet {
         HttpSession session = request.getSession();
         
         try{
+             request.setCharacterEncoding("UTF-8");//リクエストパラメータの文字コードをUTF-8に変更
+            
+            //アクセスルートチェック 直リンク防止
+            String accesschk = request.getParameter("ac");
+            if(accesschk ==null || (Integer)session.getAttribute("ac")!=Integer.parseInt(accesschk)){
+                throw new Exception("不正なアクセスです");
+            }
+            
             //ユーザー情報に対応したJavaBeansオブジェクトに格納していく
             UserDataDTO userdata = new UserDataDTO();
-            userdata.setName((String)session.getAttribute("name"));
-            Calendar birthday = Calendar.getInstance();
+            
+            UserDataBeans udb = (UserDataBeans)session.getAttribute("udb");
+            
+            userdata.setName((String)udb.getName());
+            Calendar birthday = (Calendar.getInstance());
             userdata.setBirthday(birthday.getTime());
-            userdata.setType(Integer.parseInt((String)session.getAttribute("type")));
-            userdata.setTell((String)session.getAttribute("tell"));
-            userdata.setComment((String)session.getAttribute("comment"));
+            userdata.setType(udb.getType());
+            userdata.setTell((String)udb.getTell());
+            userdata.setComment((String)udb.getComment());
             
             //DBへデータの挿入
             UserDataDAO .getInstance().insert(userdata);
+            
+            //成功したのでセッションの値を削除
+            session.invalidate();
+            
+            //結果画面での表示用に入力パラメータ―をリクエストパラメータとして保持
+            request.setAttribute("udb", udb);
             
             request.getRequestDispatcher("/insertresult.jsp").forward(request, response);
         }catch(Exception e){
