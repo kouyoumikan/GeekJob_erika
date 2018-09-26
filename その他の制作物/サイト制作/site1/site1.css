@@ -1,0 +1,74 @@
+@charset "UTF-8";
+body {font-size: 'メイリオ', 'Hiragana Kaku Gothic Pro', sans-serif}
+@media (min-width: 768px){
+
+  .site h1 a /* 文字の色と下線 */
+  {color:#000000; text-decoration: none;}
+  .site h1 /* 文字サイズ */
+  {margin: 0; font-size: 30px;}
+  .site p /* 余白 */
+  {margin: 0; font-size: 12px;}
+
+  .menu ul /* リストマークの削除と文字のデザイン */
+  {margin: 0; padding: 0; list-style: none;}
+  .menu li a /* カーソルを重ねた時のデザイン */
+  {display: block; padding: 0; color: #000000; font-size: 14px; text-decoration: none;}
+  .menu li a:hover /* リンクが機能する範囲 */
+  {background-color: #eeeeee;}
+  .menu ul:after /* リンクを横に並べる */
+  {content: ""; display: block; clear: both;}
+  .menu li
+  {float: left; width: auto;}
+
+  .kiji h1 /* 文字サイズ */
+  {margin-top: 0; margin-bottom: 20px; font-size: 36px;}
+  .kiji p /* 余白サイズ */
+  {margin-top: 0; margin-bottom: 20px;}
+  .kiji img
+  {max-width: 100px; height: auto;}
+
+  .sidemenu h1
+  {margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd; color: #666666; font-size: 18px;}
+
+  .sidemenu ul /* リストマークの削除と文字のデザイン */
+  {margin: 0; padding: 0; list-style: none;}
+  .sidemenu li a /* カーソルを重ねた時のデザイン */
+  {display: block; padding: 5px; color: #000000; font-size: 14px; text-decoration: none;}
+  .sidemenu li a:hover /* リンクが機能する範囲 */
+  {background-color: #eeeeee;}
+
+  .osusume h1
+  {margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd; color: #666666; font-size: 18px;}
+  .osusume
+  {margin-bottom: 30px;}
+
+  .osusume ul /* リストマークの削除と文字のデザイン */
+  {margin: 0; padding: 0; list-style: none;}
+  .osusume li a /* カーソルを重ねた時のデザイン */
+  {display: block; padding: 5px; color: #000000; font-size: 14px; text-decoration: none;}
+  .osusume li a:hover /* リンクが機能する範囲 */
+  {background-color: #eeeeee;}
+
+  .ninki h1
+  {margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd; color: #666666; font-size: 18px;}
+  .ninki
+  {margin-bottom: 30px;}
+
+  .ninki ul /* リストマークの削除と文字のデザイン */
+  {margin: 0; padding: 0; list-style: none;}
+  .ninki li a /* カーソルを重ねた時のデザイン */
+  {display: block; padding: 5px; color: #000000; font-size: 14px; text-decoration: none;}
+  .ninki li a:hover /* リンクが機能する範囲 */
+  {background-color: #eeeeee;}
+
+  .boxA:after
+  {content: ""; display: block; clear: both;}
+  .box3
+  {float: left; width: 70%;}
+  .box4
+  {float: left; width: 30%;}
+
+  .copyright p /* 文字のデザインと余白 */
+  {margin: 0; color: #666666; font-size: 14px;}
+
+}
