@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!-- デバイスの表示領域のカスタマイズ -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0">
+    <title>シングルページレイアウト</title>
+    <!-- グーグルにあるRalewayフォントの読み込み -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!-- アイコンフォントの読み込み -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">　<!-- ヘッダー -->
+    <p class="site-title-sub">Web designer's protfolio</p>　<!-- サブタイトル -->
+    <h1 class="site-title">HI, MY NAME IS ERIKA KOBAYASHI</h1>　<!-- サイトタイトル -->
+    <p class="site-description">Check out some of my works.</p>　<!-- ディスクリプション -->
+    <div class="buttons">　<!-- ボタン -->
+      <a class="button">LEARN MORE</a>
+      <a class="button botton-showy" href="#contact">SEED MESSAGE</a>
+    </div>
+  </header>
+  <section class="about" id = "adout"> <!-- セッション1（ABOUT）-->
+    <h2 class="heading">ABOUT ME</h2> <!-- 見出し -->
+    <p class="about-text"> <!-- 自己紹介文 -->
+      はじめまして。美術大学を卒業し、現在はIT業界でプログラマーとして働いています。
+    </p>
+    <p class="about-text">
+      このサイトは架空のWEBデザイナーのポートフォリオサイトです。
+    </p>
+  </section>
+  <section class="works"> <!-- セッション２（WORKS）-->
+    <h2 class="heading">WORKS</h2>
+    <div class="works-wrapper">
+      <div class="work-box tree">
+        <img class="work-image" src="images/tree.jpg" alt="制作事例1">
+        <div class="work-description">
+          <div class="work-description-inner">
+            <p class="work-text"> <!-- 作品紹介部分 -->
+              １つ目の制作事例 <br>
+              コンセプト <br>
+              制作ツール <br>
+              <a href="#" class="button button-ghost">READ MORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box building">
+        <img class="work-image" src="images/building.jpg" alt="制作事例2">
+        <p class="work-text">
+          ２つ目の制作事例 <br>
+          コンセプト <br>
+          制作ツール <br>
+          <a href="#" class="button button-ghost">READ MORE</a>
+        </p>
+      </div>
+      <div class="work-box lake">
+        <img class="work-image" src="images/lake.jpg" alt="制作事例3">
+        <p class="work-text">
+          ３つ目の制作事例 <br>
+          コンセプト <br>
+          制作ツール <br>
+          <a href="#" class="button button-ghost">READ MORE</a>
+        </p>
+      </div>
+      <div class="work-box sky">
+        <img class="work-image" src="images/sky.jpg" alt="制作事例4">
+        <p class="work-text">
+          ４つ目の制作事例 <br>
+          コンセプト <br>
+          制作ツール <br>
+          <a href="#" class="button button-ghost">READ MORE</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="skills"> <!-- セッション３（SKILLS）-->
+    <h2 class="heading">MY SKILLS</h2>
+    <div class="skills-wrapper"> <!-- スキル紹介 -->
+      <div class="skill-box">
+        <i class="skill-icon fa fa-lightbulb-o"></i> <!-- アイコン部分 -->
+        <div class="skill-title">IDEA</div>
+          <p class="skill-text"> <!-- スキル紹介テキスト -->
+            何か新しいことを考えることが好きです。 <br>
+            新しいデザインを思いついては試しています。 <br>
+            日本の伝統文様が好きです。 <br>
+            <a href="#" class="button">READ MORE</a>
+          </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-paint-brush"></i>
+        <div class="skill-title">IDEA</div>
+          <p class="skill-text">
+            見た目の綺麗さだけではなく、 <br>
+            デザインが伝えたいこと、コンセプトが<br>
+            分かりやすいデザインにするように意識しています。<br>
+            <a href="#" class="button">READ MORE</a>
+          </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-code"></i>
+        <div class="skill-title">IDEA</div>
+          <p class="skill-text">
+            HTML/CSSのコーティングも行います。 <br>
+            正しく美しいマークアップとデザイン、 <br>
+            今後の変更への強さも考慮しています。 <br>
+            <a href="#" class="button">READ MORE</a>
+          </p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id = "contect"> <!-- セッション４（CONTACT）-->
+    <h2 class="heading">CONTACT</h2>
+    <from class="contact-form"> <!-- 問い合わせフォーム -->
+      <input type="text" name="name" placeholder="NAME"> <!-- テキスト -->
+      <textarea name="message" placeholder="MESSAGE"></textarea> <!-- 複数行のテキスト -->
+      <input type="submit" value="SEND"> <!-- 送信ボタン -->
+    </from>
+  </section>
+  <footer class="footer"> <!-- フッター -->
+    @ sample site 2
+    <script src="lib/placeholders.min.js"></script>
+  </footer>
+</body>
+</html>
