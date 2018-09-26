@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="ja"> <!-- 日本語と指定 -->
+    <head>
+        <title>ビジネス系サイト</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="site2-1.css">
+    </head>
+    <body>
+        <div class="boxA">  ボックスを横に並べる
+            <div class="box1"> サイト名を表示
+                <h1><a href="#">TimeSwitch</a></h1>
+                <p>毎日の生活で気になるものを書き留めているブログです</p>
+                    <style type="text/css">
+                        site h1 a 文字の色と下線
+                        {color:#000000; text-decoration: none;}
+                        site h1 文字サイズ
+                        {margin: 0; font-size: 30px;}
+                        site p 余白
+                        {margin: 0; font-size: 12px;}
+                    </style>
+            </div>
+
+            <div class="box2"> サイト名を表示
+                <nav class="menu"> メニュー(横並び)
+                    <ul>
+                        <li><a href="#">トップ</a></li>
+                        <li><a href="#">沿革</a></li>
+                        <li><a href="#">事業紹介</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                        <style type="text/css">
+                        <!--
+                        menu ul リストマークの削除と文字のデザイン
+                        {margin: 0; padding: 0; list-style: none;}
+                        menu li a カーソルを重ねた時のデザイン
+                        {display: block; padding: 0; color: #000000; font-size: 14px; text-decoration: none;}
+                        menu li a:hover リンクが機能する範囲
+                        {background-color: #eeeeee;}
+                        menu ul:after リンクを横に並べる
+                        {content: ""; display: block; clear: both;}
+                        menu li
+                        {float: left; width: auto;}
+                        -->
+                        </style>
+                </nav>
+        </div>
+
+        <div class="box3"> サイト名を表示
+            <h1><a href="#">TimeSwitch</a></h1>
+
+            <p><img scr="img/header.jsp" alt="" class="topimg"></p> 本文中の画像
+
+                <style type="text/css">
+                    top img
+                    {max-width: 100px; height: auto;}
+                </style>
+        </div>
+
+        <div class="box4"> サイト名を表示
+            <div class="news"> サイドメニュー2(縦並び)
+                <h1>お知らせ</h1>
+
+                <ul>
+                    <li><a href="#">
+                            <time datetime="2014-10-15">10/15</time> 日付を指定
+                        データセンターのメンテナンスを行いますト</a></li>
+                    <li><a href="#">
+                            <time datetime="2014-10-05">10/05</time>
+                        セミナー開催に伴うキャンペーンのお知らせ</a></li>
+                </ul>
+                    <style type="text/css">
+                    <!--
+                    news h1
+                        {margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd; color: #666666; font-size: 18px;}
+
+                    news ul リストマークの削除と文字のデザイン
+                    {margin: 0; padding: 0; list-style: none;}
+                    news li a カーソルを重ねた時のデザイン
+                    {display: block; padding: 5px; color: #000000; font-size: 14px; text-decoration: none;
+                    border-bottom: dotted 2px #dddddd }
+                    news li a:hover リンクが機能する範囲
+                    {background-color: #eeeeee;}
+                    news time 日付とリンクのデザイン
+                    {margin-right: 10px; color: #888888; font-weight: bold;}
+                    -->
+                    </style>
+            </div>
+        </div>
+
+        <div class="box5"> サイト名を表示
+            <div class="copyright"> コピーライト
+                <p>TimeSwitchは毎日の生活で気になるものを書き留めているブログです</p>
+                <p>Copyright & copy; TimeSwitch</p>
+                    <style type="text/css">
+                    <!--
+                    copyright p 文字のデザインと余白
+                    {margin: 0; color: #666666; font-size: 14px;}
+                    -->
+                    </style>
+            </div>
+        </div>
+
+    </body>
+</html>
